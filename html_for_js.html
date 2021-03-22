@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Dice Game</title>
+    <link rel="stylesheet" href="web_style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Refresh Me</h1>
+
+      <div class="Dice1">
+        <p><strong><em>Player 1</em></strong></p>
+        <img src="6.jpg" alt="Dice">
+          </div>
+          <div class="Dice2">
+            <p><strong><em>Player 2</em></strong></p>
+            <img src="6.jpg" alt="Dice">
+          </div>
+          <div class="abs">
+            <h1 class="end">Keep Refresing, Keep Playing and Keep Wasting Ur Time 😂😂😂😂</h1>
+          </div>
+
+        </div>
+
+
+
+      <script type="text/javascript">
+
+      var random1=Math.floor(Math.random()*6)+1;
+      var randomimage1= random1+".jpg";
+      var image1source  = randomimage1;
+      var image1= document.querySelectorAll("img")[0];
+      image1.setAttribute("src", image1source);
+
+      var random2=Math.floor(Math.random()*6)+1;
+      var randomimage2= random2+".jpg";
+      var image2source  = randomimage2;
+      var image2= document.querySelectorAll("img")[1];
+      image2.setAttribute("src", image2source);
+      if(random1>random2){
+
+        document.querySelector("h1").innerHTML="Player 1 wins!";
+
+      }
+      else if (random2>random1) {
+        document.querySelector("h1").innerHTML="Player 2 wins!"
+
+      }
+      else{
+        document.querySelector("h1").innerHTML="Its a draw."
+      }
+      </script>
+  </body>
+</html>

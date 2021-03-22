@@ -1,0 +1,26 @@
+body{
+  background-color: #003366;
+}
+.container{
+  background-color: #003366;
+  text-align: center;
+}
+.Dice1{
+  width: 50%;
+  text-align: center;
+  position: absolute;
+
+
+}
+.Dice2{
+  width: 50%;
+  text-align: center;
+  margin-left: 50%;
+  position: absolute;
+}
+.end{
+  text-align: center;
+  width: 100%;
+  margin-top: 30%;
+
+}
